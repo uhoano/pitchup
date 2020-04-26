@@ -1,0 +1,5 @@
+<a routerLink='auth' class="btn btn-outline-succes" (click) = "onSignIn()" *ngIf="!authStatus">Sign in !</a>
+
+<a routerLink='' class="btn btn-outline-danger" (click)="onSignOut()" *ngIf ="authStatus"> Sign out !</a>
+
+<a routerLink='pitches' class="btn btn-outline-info" *ngIf="authStatus"> View pitches</a>

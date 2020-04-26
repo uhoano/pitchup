@@ -1,0 +1,17 @@
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h1 class="my-3"> welcome to pitchup bro <button type="button" name="button" (click)="onResetAll()">Reset
+          votes</button></h1>
+
+      <ul class="list-group">
+        <app-pitch-single [lastUpdate]='lastUpdate' [isAuth]='isAuth' [index]='i'
+          *ngFor="let pitch of pitches let i = index " [pitchTitle]="pitch.title" [pitchCategory]="pitch.category"
+          [pitchContent]="pitch.content" [pitchScore]="pitch.score" [pitchId]="pitch.id"></app-pitch-single>
+        <!-- <app-pitch-single [pitchTitle]="pitchTitle2" [pitchCategory]="pitchCategory2"> </app-pitch-single>
+        <app-pitch-single [pitchTitle]="pitchTitle3"></app-pitch-single> -->
+      </ul>
+    </div>
+  </div>
+
+</div>
